@@ -14,6 +14,7 @@ function App() {
       <Route path='/home' element={<Home/>}></Route>
       <Route path='/student' element={<Student method='POST'/>}></Route>
       <Route path='/studentview' element={<Studentview method='get'/>}></Route>
+      
 
      </Routes>
      </BrowserRouter>
