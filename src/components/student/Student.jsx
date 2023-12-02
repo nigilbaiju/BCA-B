@@ -17,7 +17,7 @@ const inputhandler =(event)=> {
 
 const savedata =()=>{
   console.log(inputs)
-  axios.post("http://localhost:3005/snew",inputs)
+  axios.post("http://localhost:4005/snew",inputs)
   .then((response)=>{alert("Record Saved")})
   .catch(err=>console.log(err))
 

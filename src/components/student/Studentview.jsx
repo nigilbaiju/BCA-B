@@ -12,7 +12,7 @@ const Studentview = () => {
 
 
     useEffect(()=>{
-        axios.get("http://localhost:3005/sview")
+        axios.get("http://localhost:4005/sview")
         .then(response =>{
             console.log(response.data)
             setStudents(response.data)
@@ -22,7 +22,7 @@ const Studentview = () => {
 
 const deletevalues =(id)=>{
     console.log("deleted",id)
-    axios.put("http://localhost:3005/updatestatus/"+id)
+    axios.put("http://localhost:4005/updatestatus/"+id)
     .then((response)=>{
         alert("DELETED")
     window.location.reload(false);

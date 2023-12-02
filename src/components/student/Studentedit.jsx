@@ -19,7 +19,7 @@ const Studentedit = (props) => {
       
         if(props.method ==='put'){
           
-            axios.put("http://localhost:3005/sedit/"+inputs._id,inputs)
+            axios.put("http://localhost:4005/sedit/"+inputs._id,inputs)
             .then((response)=>{
                 alert("Updated")
                 window.location.reload(false)
