@@ -17,18 +17,7 @@ const Studentedit = (props) => {
     
     const savedata =()=>{
       
-    //     if(props.method="post")
-    //     {
-    //         console.log(inputs)
-    //   axios.post("http://localhost:3005/snew",inputs)
-    //   .then((response)=>{alert("Record Saved")})
-    //   .catch(err=>console.log(err))
-    
-    //   navigate('/studentview')
-    //     }
-    //     else
-
-        if(props.method="put"){
+        if(props.method ==='put'){
           
             axios.put("http://localhost:3005/sedit/"+inputs._id,inputs)
             .then((response)=>{
